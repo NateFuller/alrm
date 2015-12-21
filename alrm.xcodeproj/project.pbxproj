@@ -14,6 +14,8 @@
 		8718E2C11C277E3B00AC6F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8718E2BF1C277E3B00AC6F18 /* LaunchScreen.storyboard */; };
 		8718E2CC1C277E3B00AC6F18 /* alrmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718E2CB1C277E3B00AC6F18 /* alrmTests.swift */; };
 		8718E2D71C277E3B00AC6F18 /* alrmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718E2D61C277E3B00AC6F18 /* alrmUITests.swift */; };
+		87EB64CA1C27AD5800B1C423 /* AlarmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87EB64C91C27AD5800B1C423 /* AlarmCell.xib */; };
+		87EB64CE1C27B3AD00B1C423 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB64CD1C27B3AD00B1C423 /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8718E2D21C277E3B00AC6F18 /* alrmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alrmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8718E2D61C277E3B00AC6F18 /* alrmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alrmUITests.swift; sourceTree = "<group>"; };
 		8718E2D81C277E3B00AC6F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87EB64C91C27AD5800B1C423 /* AlarmCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmCell.xib; sourceTree = "<group>"; };
+		87EB64CD1C27B3AD00B1C423 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		8718E2B51C277E3B00AC6F18 /* alrm */ = {
 			isa = PBXGroup;
 			children = (
+				87EB64CC1C27B38E00B1C423 /* Controllers */,
+				87EB64CB1C27B38600B1C423 /* Models */,
+				87EB64C81C27AC4B00B1C423 /* Views */,
 				8718E2B61C277E3B00AC6F18 /* AppDelegate.swift */,
-				8718E2B81C277E3B00AC6F18 /* HomeViewController.swift */,
 				8718E2BA1C277E3B00AC6F18 /* Main.storyboard */,
 				8718E2BD1C277E3B00AC6F18 /* Assets.xcassets */,
 				8718E2BF1C277E3B00AC6F18 /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				8718E2D81C277E3B00AC6F18 /* Info.plist */,
 			);
 			path = alrmUITests;
+			sourceTree = "<group>";
+		};
+		87EB64C81C27AC4B00B1C423 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87EB64C91C27AD5800B1C423 /* AlarmCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		87EB64CB1C27B38600B1C423 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87EB64CD1C27B3AD00B1C423 /* Alarm.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		87EB64CC1C27B38E00B1C423 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8718E2B81C277E3B00AC6F18 /* HomeViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +265,7 @@
 				8718E2C11C277E3B00AC6F18 /* LaunchScreen.storyboard in Resources */,
 				8718E2BE1C277E3B00AC6F18 /* Assets.xcassets in Resources */,
 				8718E2BC1C277E3B00AC6F18 /* Main.storyboard in Resources */,
+				87EB64CA1C27AD5800B1C423 /* AlarmCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +292,7 @@
 			files = (
 				8718E2B91C277E3B00AC6F18 /* HomeViewController.swift in Sources */,
 				8718E2B71C277E3B00AC6F18 /* AppDelegate.swift in Sources */,
+				87EB64CE1C27B3AD00B1C423 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +517,7 @@
 				8718E2DD1C277E3C00AC6F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8718E2DE1C277E3C00AC6F18 /* Build configuration list for PBXNativeTarget "alrmTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +526,7 @@
 				8718E2E01C277E3C00AC6F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8718E2E11C277E3C00AC6F18 /* Build configuration list for PBXNativeTarget "alrmUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +535,7 @@
 				8718E2E31C277E3C00AC6F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

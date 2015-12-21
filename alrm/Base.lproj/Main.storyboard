@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -27,23 +28,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HmK-4X-t9X">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wka-Lr-Hn5">
                                 <rect key="frame" x="0.0" y="236" width="600" height="364"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="364" id="4GV-J5-KMD"/>
-                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ftV-nb-LQ0" firstAttribute="centerX" secondItem="6ka-em-0zf" secondAttribute="centerX" id="0qB-Bx-uzg"/>
-                            <constraint firstItem="HmK-4X-t9X" firstAttribute="bottom" secondItem="hoX-Ox-qyi" secondAttribute="top" id="C8Y-iI-5vq"/>
+                            <constraint firstItem="wka-Lr-Hn5" firstAttribute="centerX" secondItem="6ka-em-0zf" secondAttribute="centerX" id="9BT-jz-clz"/>
+                            <constraint firstItem="wka-Lr-Hn5" firstAttribute="leading" secondItem="6ka-em-0zf" secondAttribute="leading" id="9gr-En-6zP"/>
+                            <constraint firstItem="wka-Lr-Hn5" firstAttribute="height" secondItem="6ka-em-0zf" secondAttribute="height" multiplier="0.66" id="F0c-Lv-IG4"/>
                             <constraint firstItem="ftV-nb-LQ0" firstAttribute="top" secondItem="9cF-Sl-10i" secondAttribute="bottom" constant="20" id="Gds-MS-LlF"/>
-                            <constraint firstItem="HmK-4X-t9X" firstAttribute="leading" secondItem="6ka-em-0zf" secondAttribute="leading" id="JdL-hx-BX7"/>
-                            <constraint firstItem="HmK-4X-t9X" firstAttribute="centerX" secondItem="6ka-em-0zf" secondAttribute="centerX" id="Jo8-XZ-847"/>
+                            <constraint firstAttribute="trailing" secondItem="wka-Lr-Hn5" secondAttribute="trailing" id="eqz-Cq-LXY"/>
+                            <constraint firstItem="hoX-Ox-qyi" firstAttribute="top" secondItem="wka-Lr-Hn5" secondAttribute="bottom" id="i1v-Qh-Gor"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alarmTable" destination="wka-Lr-Hn5" id="Q3j-bx-dHU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRY-jx-FlW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
